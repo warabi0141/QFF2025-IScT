@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.css';
 import qffLogo from '../assets/Badge_Dark.svg';
 
@@ -12,8 +13,33 @@ export const Hero = () => {
     const tape8ClassName = `${styles.tapePerple} ${styles.tape8}`;
     const tape9ClassName = `${styles.tapeRed} ${styles.tape9}`;
 
+    const imgRef = useRef<HTMLImageElement | null>(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [shouldLoad, setShouldLoad] = useState(false);
+
+    useEffect(() => {
+        if (!imgRef.current) return;
+
+        // IntersectionObserver を使って遅延読み込みをトリガー
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setShouldLoad(true);
+                        observer.disconnect();
+                    }
+                });
+            },
+            { root: null, rootMargin: '200px', threshold: 0.1 }
+        );
+
+        observer.observe(imgRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <div className = {styles.hero}>
+        <div className={styles.hero}>
             <div className={styles.heroBackground}>
                 <div className={tape1ClassName}></div>
                 <div className={tape2ClassName}></div>
@@ -25,8 +51,17 @@ export const Hero = () => {
                 <div className={tape8ClassName}></div>
                 <div className={tape9ClassName}></div>
             </div>
-            <img src={qffLogo} alt="QFF Logo" className={styles.svgLogo} />
+            {/* ロゴ画像: 遅延読み込みと読み込み完了でフェードイン */}
+            <img
+                ref={imgRef}
+                src={shouldLoad ? qffLogo : undefined}
+                data-src={qffLogo}
+                alt="QFF Logo"
+                className={`${styles.svgLogo} ${isLoaded ? styles.logoLoaded : ''}`}
+                onLoad={() => setIsLoaded(true)}
+                
+            />
             <p className={styles.heroText}>@Science Tokyo</p>
         </div>
-    )
-}
+    );
+};
