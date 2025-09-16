@@ -2,6 +2,7 @@ import './App.css'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Footer } from './components/Footer'
+import { Timetable } from './components/Timetable'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Hero />
       <About />
+      <Timetable />
       <Footer />
     </>
   )
