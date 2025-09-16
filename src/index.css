@@ -19,6 +19,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: 'Zen Kaku Gothic New', sans-serif; 
   line-height: 1.5;
