@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 }
 
 .svgLogo {
@@ -73,7 +73,7 @@
 }
 
 .tape1 {
-    transform: translateY(-25%);
+    transform: translateY(-20%);
 }
 
 .tape2 {
