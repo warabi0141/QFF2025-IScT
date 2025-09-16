@@ -1,0 +1,9 @@
+.footerWrapper {
+    text-align: center;
+    padding: 2rem;
+}
+
+.footerText {
+    font-size: 0.7rem;
+    color: #666;
+}
