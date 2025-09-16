@@ -1,6 +1,6 @@
 import styles from './Hero.module.css';
 import qffLogo from '../assets/Badge_Dark.svg';
-import heroBackground from '../assets/HeroBackground.svg';
+import heroBackground from '../assets/heroBackground.svg';
 
 export const Hero = () => {
     return (
