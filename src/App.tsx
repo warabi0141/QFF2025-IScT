@@ -3,6 +3,7 @@ import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Footer } from './components/Footer'
 import { Timetable } from './components/Timetable'
+import { Organizers } from './components/Organizers'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Timetable />
+      <Organizers />
       <Footer />
     </>
   )
