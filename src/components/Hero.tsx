@@ -26,7 +26,7 @@ export const Hero = () => {
                 <div className={tape9ClassName}></div>
             </div>
             <img src={qffLogo} alt="QFF Logo" className={styles.svgLogo} />
-            <p className={styles.heroText}>@ScienceTokyo</p>
+            <p className={styles.heroText}>@Science Tokyo</p>
         </div>
     )
 }
