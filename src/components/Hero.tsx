@@ -61,7 +61,11 @@ export const Hero = () => {
                 onLoad={() => setIsLoaded(true)}
                 
             />
-            <p className={styles.heroText}>@Science Tokyo</p>
+            <div className={styles.heroTextWrapper}>
+                <p className={styles.heroText}>@Science Tokyo</p>
+                <p className={styles.heroText}>2025年11月開催</p>
+                <p className={styles.heroText}>東京科学大学学内限定イベント</p>
+            </div>
         </div>
     );
 };
