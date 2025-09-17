@@ -18,3 +18,9 @@
     margin: 2rem auto;
     border-left: 5px solid rgb(138, 43, 226);
 }
+
+.timetable > h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
