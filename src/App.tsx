@@ -4,6 +4,7 @@ import { About } from './components/About'
 import { Footer } from './components/Footer'
 import { Timetable } from './components/Timetable'
 import { Organizers } from './components/Organizers'
+import { InterestForm } from './components/InterestForm'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <About />
       <Timetable />
+      <InterestForm />
       <Organizers />
       <Footer />
     </>
