@@ -30,7 +30,7 @@ export const InterestForm = () => {
         <div className={styles.interestFormWrapper}>
             <h2 className={styles.heading}>ご興味のある方へ</h2>
             <p>開催場所の詳細やワークショップの資料を受け取るためにSlackのグループに招待します</p>
-            <p>お名前と東京科学大学のmアドレス、所属している系を記入して送信してください</p>
+            <p>お名前と東京科学大学のメールアドレス、所属を記入して送信してください</p>
             {state.succeeded ? (
                 <>
                     <p>ご登録いただきありがとうございます！</p>
@@ -57,7 +57,7 @@ export const InterestForm = () => {
 
                             <Field.Root>
                                 <Field.Label>メールアドレス</Field.Label>
-                                <Field.HelperText>東京科学大学のmアドレスを記入してください</Field.HelperText>
+                                <Field.HelperText>東京科学大学のメールアドレスを記入してください</Field.HelperText>
                                 <Input 
                                     id="email"
                                     type="email"
@@ -71,8 +71,8 @@ export const InterestForm = () => {
                             </Field.Root>
 
                             <Field.Root>
-                                <Field.Label>所属系</Field.Label>
-                                <Field.HelperText>所属している系を記入してください。Slackのユーザー検索に利用します</Field.HelperText>
+                                <Field.Label>所属</Field.Label>
+                                <Field.HelperText>所属を記入してください。Slackのユーザー検索に利用します</Field.HelperText>
                                 <Input 
                                     id="department"
                                     type="text"
