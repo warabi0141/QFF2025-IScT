@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.css';
 import qffLogo from '../assets/Badge_Dark.svg';
+import {
+  Button,
+} from "@chakra-ui/react"
 
 export const Hero = () => {
     const tape1ClassName = `${styles.tapeBlue} ${styles.tape1}`;
@@ -63,8 +66,15 @@ export const Hero = () => {
             />
             <div className={styles.heroTextWrapper}>
                 <p className={styles.heroText}>@Science Tokyo</p>
-                <p className={styles.heroText}>2025年11月開催</p>
+                <p className={styles.heroText}>2025年11月13日(木)・14日(金)開催</p>
                 <p className={styles.heroText}>東京科学大学学内限定イベント</p>
+            </div>
+            <div className={styles.buttonWrapper}>
+                <Button colorPalette='purple' m="1rem auto" size='xl' asChild>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeigFIa7Ud6gzbphf3m7hymdYutM0byiNo3241AJ_BDNGFBBA/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                        参加登録はこちら
+                    </a>
+                </Button>
             </div>
         </div>
     );
