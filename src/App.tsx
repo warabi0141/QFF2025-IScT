@@ -6,12 +6,14 @@ import { Timetable } from './components/Timetable'
 import { Organizers } from './components/Organizers'
 import { InterestForm } from './components/InterestForm'
 import { Information } from './components/Information'
+import { Sponsorship } from './components/Sponsorship'
 
 function App() {
 
   return (
     <>
       <Hero />
+      <Sponsorship />
       <About />
       <Information />
       <Timetable />
