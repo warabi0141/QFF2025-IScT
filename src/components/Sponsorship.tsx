@@ -1,5 +1,5 @@
 import styles from "./Sponsorship.module.css";
-import Logo from "../assets/Quantum_Universe_logo.webp";
+import Logo from "../../public/Quantum_Universe_logo.webp";
 
 export const Sponsorship = () => {
     return (

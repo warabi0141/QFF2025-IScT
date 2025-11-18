@@ -1,8 +1,8 @@
 import styles from './About.module.css';
 import { ContentsCard } from './contentsCard';
-import qiskitImage from '../assets/Qiskit_03.png';
-import cropFutureImage from '../assets/Crop_Future.png';
-import beginnerImage from '../assets/sdesign_00048.png.webp';
+import qiskitImage from '../../public/Qiskit_03.png';
+import cropFutureImage from '../../public/Crop_Future.png';
+import beginnerImage from '../../public/sdesign_00048.png.webp';
 
 export const About = () => {
     return (

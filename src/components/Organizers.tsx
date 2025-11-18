@@ -1,8 +1,8 @@
 import { ContentsCard } from './contentsCard';
 import styles from './Organizers.module.css';
-import profileImage1 from '../assets/profileImage1.png';
-import profileImage2 from '../assets/profileImage2.jpg';
-import profileImage3 from '../assets/profileImage3.jpg';
+import profileImage1 from '../../public/profileImage1.png';
+import profileImage2 from '../../public/profileImage2.jpg';
+import profileImage3 from '../../public/profileImage3.jpg';
 
 export const Organizers = () => {
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.css';
-import qffLogo from '../assets/Badge_Dark.svg';
+import qffLogo from '../../public/Badge_Dark.svg';
 import {
   Button,
 } from "@chakra-ui/react"
