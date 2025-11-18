@@ -1,5 +1,5 @@
 import styles from './Photo.module.css';
-import eventPhoto from '@/assets/event_image.JPG';
+import eventPhoto from '../assets/event_image.JPG';
 
 export const Photo = () => {
     return (
