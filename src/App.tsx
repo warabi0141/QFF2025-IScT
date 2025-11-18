@@ -7,6 +7,7 @@ import { Organizers } from './components/Organizers'
 import { InterestForm } from './components/InterestForm'
 import { Information } from './components/Information'
 import { Sponsorship } from './components/Sponsorship'
+import { Photo } from './components/Photo'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <>
       <Hero />
       <Sponsorship />
+      <Photo />
       <About />
       <Information />
       <Timetable />
